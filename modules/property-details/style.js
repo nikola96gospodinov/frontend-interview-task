@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const AccountList = styled.ul`
   list-style: none;
   padding-left: 0;
+  width: 100%;
 `;
 
 export const AccountLabel = styled.div`
@@ -37,6 +38,8 @@ export const AccountSection = styled.div`
 
 export const AccountListItem = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &:not(:last-of-type) {
     margin-bottom: ${(props) => props.theme.space.m};
@@ -45,4 +48,11 @@ export const AccountListItem = styled.div`
 
 export const Inset = styled.div`
   padding: 0 ${(props) => props.theme.space.m};
+`;
+
+export const Pill = styled.div`
+  padding: ${(props) => props.theme.space.xs} ${(props) => props.theme.space.l};
+  background: #c2f7e1;
+  color: #006b57;
+  border-radius: 1rem;
 `;
